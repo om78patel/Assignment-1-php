@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+        <title>Pizza Order</title>
+    </head>
+    <body>
+        <header class="LOGO">
+            <nav class="pizza-nav">
+                <div class="navbar-brand">
+                    <img src="./logo.jpeg" alt="header logo">
+                    <div class="mylogo" id="logo">
+                        <ul class="links">
+                        <li class="nav-item">
+                            <a href="#" class="active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="active">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="active">Customer care</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="active">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="active">Find us</a>
+                        </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="container">
+            <h1>Order your Pizza here</h1>
+            <form id="pizzaForm" action="database.php">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="pizzaSize">Pizza Size:</label>
+                <select id="pizzaSize" name="pizzaSize">
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+
+                <label>Toppings:</label>
+                <div class="topping">
+                    <input type="checkbox" id="pepperoni" name="topping[]" value="Pepperoni">
+                    <label for="pepperoni">Pepperoni</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="mushrooms" name="topping[]" value="Mushrooms">
+                    <label for="mushrooms">Mushrooms</label>
+                </div>
+                <div class="topping">
+                    <input type="checkbox" id="olives" name="topping[]" value="Olives">
+                    <label for="olives">Olives</label>
+                </div>
+                <label> Dipping Sauces </label>
+                <div class="dippings">
+                    <input type="checkbox" id="garlic" name="dippings[]" value="garlic">
+                    <label for="garlic">Garlic</label>
+                </div>
+                <div class="dippings">
+                    <input type="checkbox" id="bluecheese" name="dippings[]" value="blue cheese">
+                    <label for="bluecheese">blue cheese</label>
+                </div>
+                <div class="jalapeno">
+                    <input type="checkbox" id="jalapeno" name="dippings[]" value="jalapeno">
+                    <label for="jalapeno">jalapeno</label>
+                </div>
+                <button type="submit" name="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(./Pizza2.jpg);
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+/* Styling for the navbar brand */
+.navbar-brand {
+    width: 100%;
+    height: 100px;
+    background-color: darkcyan;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+}
+
+/* Styling for the logo inside the navbar brand */
+.navbar-brand img {
+    height: 100%;
+    margin-right: 10px;
+}
+
+/* Styling for the links in the navbar */
+.nav-item {
+    display: inline-block;
+}
+
+/* Styling for the links in the navbar */
+.links a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px;
+    margin-left: 70px;
+    font-size: 22px;
+}
+
+/* Styling for the active link in the navbar */
+.links a.active {
+    background-color: darkcyan;
+}
+
+/* Styling for the hover effect on links in the navbar */
+.links a:hover {
+    color: blue;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+form{
+    background-color:#ccc;
+};
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form .topping {
+    display: flex;
+    align-items: center;
+}
+
+form .topping input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.container p {
+    font-weight: bold;
+}
